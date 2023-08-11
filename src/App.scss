@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bgVideo {
+  width: 100vw;
+  z-index: 2;
+}
+
+.homeHeroWrapper {
+  position: relative;
+
+  .textWrapper {
+    position: absolute;
+    z-index: 200;
+    color: white;
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .videoWrapper {
+    position: relative;
+
+    .overlay {
+      overflow: hidden;
+      background-color: rgba(0, 0, 0, 0.411);
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 100;
+
+      video {
+        visibility: hidden;
+      }
+    }
+  }
+}

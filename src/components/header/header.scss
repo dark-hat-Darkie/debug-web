@@ -1,0 +1,26 @@
+.debug-menu {
+    align-items: center;
+    justify-content: flex-start;
+    li {
+        display: flex !important;
+        align-items: center;
+        height: 80px;
+    }
+}
+
+.debug-menu2 {
+    justify-content: flex-end;
+    li {
+        display: flex !important;
+        align-items: center;
+        height: 80px;
+    }
+    
+}
+
+.debug-menu2 > .ant-menu-item::after,
+.ant-menu-horizontal > .ant-menu-submenu::after {
+  border-bottom-style: none !important;
+  transition: none !important;
+}
+
